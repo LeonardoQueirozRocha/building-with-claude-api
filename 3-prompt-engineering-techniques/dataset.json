@@ -1,0 +1,47 @@
+[
+  {
+    "prompt_inputs": {
+      "content": "The accelerating dissolution of atmospheric CO\u2082 into ocean surface waters has driven a 0.1 unit decline in mean ocean pH since the pre-industrial era, a process termed ocean acidification, which fundamentally disrupts the marine carbonate system and impairs calcification in organisms such as corals, mollusks, and foraminifera. This chemical perturbation operates in concert with rising sea surface temperatures and deoxygenation to compress suitable habitat ranges for marine species, contributing to measurable declines in reef biodiversity and the restructuring of pelagic food webs. Simultaneously, the degradation of coastal blue carbon ecosystems\u2014including mangroves, seagrasses, and salt marshes\u2014releases previously sequestered organic carbon back into both the ocean and atmosphere, weakening a critical negative feedback within the global carbon cycle and amplifying radiative forcing. These interacting stressors collectively threaten the provisioning services that marine ecosystems supply to human populations, including fisheries productivity, coastal protection, and climate regulation, underscoring the systemic nature of anthropogenic interference with Earth's biogeochemical systems."
+    },
+    "solution_criteria": [
+      "Output is a valid JSON array of strings",
+      "All major topics present in the passage are represented in the array"
+    ],
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with a dense passage from a climate science article discussing multiple interconnected environmental phenomena like ocean acidification, carbon cycles, and biodiversity loss"
+  },
+  {
+    "prompt_inputs": {
+      "content": "This randomized controlled trial examined the efficacy of cognitive behavioral therapy (CBT) in reducing anxiety symptoms among adolescents aged 12\u201317 diagnosed with generalized anxiety disorder (GAD) and social anxiety disorder (SAD). A total of 124 participants were randomly assigned to either a 12-week manualized CBT protocol or a waitlist control condition. Outcome measures included the Screen for Child Anxiety Related Disorders (SCARED), clinician-administered diagnostic interviews, and self-reported quality of life scales administered at baseline, post-treatment, and 6-month follow-up. Results indicated that adolescents in the CBT group demonstrated significantly greater reductions in anxiety severity (d = 0.82, p < .001) and higher rates of diagnostic remission (61%) compared to the control group (18%). Improvements in social functioning and school attendance were also observed, suggesting that CBT produces broad therapeutic benefits beyond symptom reduction alone."
+    },
+    "solution_criteria": [
+      "Output is a valid JSON array of strings",
+      "Includes the key topics present in the passage such as cognitive behavioral therapy, adolescent anxiety, randomized controlled trial, and treatment outcomes"
+    ],
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with a short abstract from a psychology study on cognitive behavioral therapy outcomes in adolescents with anxiety disorders"
+  },
+  {
+    "prompt_inputs": {
+      "content": "We demonstrate that fault-tolerant logical qubit encoding via the surface code achieves a threshold error rate of approximately 1% under depolarizing noise, leveraging lattice surgery operations for transversal gate implementation. Our variational quantum eigensolver (VQE) ansatz, parameterized by Ry and CNOT gates, converges to the ground state energy of the Fermi-Hubbard Hamiltonian within chemical accuracy (< 1.6 \u00d7 10\u207b\u00b3 Hartree) using a COBYLA optimizer, while topological protection from anyonic braiding in non-Abelian systems offers an alternative pathway to decoherence suppression. Benchmarking against classical tensor network methods such as DMRG confirms quantum advantage in the strongly correlated electron regime."
+    },
+    "solution_criteria": [
+      "Extracts all major technical topics present in the passage (e.g., surface codes, fault tolerance, VQE, Fermi-Hubbard model, topological quantum computing, DMRG)",
+      "Returns output as a JSON array of strings"
+    ],
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with a highly technical excerpt from a quantum computing paper containing specialized jargon, equations references, and niche subfield terminology"
+  },
+  {
+    "prompt_inputs": {
+      "content": "The collapse of the Ottoman Empire in the early twentieth century precipitated a profound restructuring of regional political economies, as newly emergent nation-states grappled with the dual imperatives of fiscal modernization and the consolidation of sovereign authority. Drawing on Weberian frameworks of bureaucratic rationalization, historians have traced how tributary modes of extraction gave way to centralized taxation systems, fundamentally disrupting the patronage networks that had long mediated relations between imperial administrators and local merchant guilds. This transition was further complicated by the intrusion of European capital, whose penetration of Anatolian and Levantine markets accelerated processes of commodity monetization while simultaneously eroding the customary land tenure arrangements that undergirded peasant subsistence economies. Anthropologists such as Paul Stirling documented how these macroeconomic transformations reverberated at the village level, reshaping kinship obligations, bride-price negotiations, and the moral economies of reciprocity that had historically buffered rural communities against market volatility."
+    },
+    "solution_criteria": [
+      "Output is a valid JSON array of strings",
+      "Includes major topics spanning economics, political theory, and cultural anthropology present in the passage",
+      "Does not include topics or concepts absent from the passage"
+    ],
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with a multidisciplinary humanities passage from a historical analysis that blends economics, political theory, and cultural anthropology topics"
+  }
+]

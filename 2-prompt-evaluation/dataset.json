@@ -1,0 +1,17 @@
+[
+  {
+    "task": "Write a Python function that takes an S3 bucket name and a prefix string as arguments, uses boto3 to list all object keys under that prefix, and returns them as a list of strings.",
+    "format": "python",
+    "solution_criteria": "Function uses boto3 S3 client, handles pagination with list_objects_v2, filters by the given prefix, and returns a flat list of key strings."
+  },
+  {
+    "task": "Write an IAM policy JSON document that allows a user to read objects from a specific S3 bucket named 'my-data-bucket' but explicitly denies the ability to delete any objects from that bucket.",
+    "format": "json",
+    "solution_criteria": "JSON contains a valid IAM policy with Version field, one Allow statement for s3:GetObject and one Deny statement for s3:DeleteObject, both scoped to the correct bucket ARN resource."
+  },
+  {
+    "task": "Write a regular expression that matches valid AWS S3 bucket names according to AWS naming rules: 3 to 63 characters long, containing only lowercase letters, numbers, and hyphens, starting and ending with a letter or number, and containing no consecutive hyphens.",
+    "format": "regex",
+    "solution_criteria": "Regex enforces length between 3 and 63 characters, allows only lowercase alphanumeric and hyphens, ensures first and last characters are alphanumeric, and rejects consecutive hyphens."
+  }
+]
